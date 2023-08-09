@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/Grande.png" alt="foto flexivel">
+    </picture>
+    <!--Tem que ser sempre nessa ordem: 1-imagem base em baixo, 2-media em cima, 3- pequena em cima e etc...-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+       <source src="mídia/leva-eternity-149473.mp3" type="audio/mpeg">
+       <source src="mídia/leva-eternity-149473.ogg" type="audio/ogg">
+       <source src="mídia/leva-eternity-149473.mp3" type="audio/wav">
+    </audio>
+    <!--NAO USE WAV! É MUITO PESADO-->
+    <!--MP3-WAV-OGG-->
+    
+</body>
+</html>

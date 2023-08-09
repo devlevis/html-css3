@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    background-color: darkorange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 21px;
+}
+h1{
+    color: darkorange;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: cornsilk;
+    text-align: center;
+}
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: brown;
+}
+p {
+    color: black;
+    text-align: center;
+}

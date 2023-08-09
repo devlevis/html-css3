@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*
+        SELETORES PERSONALIZADOS
+        # : id
+           . : class
+           : : pseudo-class
+           :: : pseudo-element
+           > : clildren
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited { /* classe que mostra se ja foi visitado ou nao */ 
+            color: green;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        a:active {
+            color: greenyellow;
+        }
+        .especial::after {
+           content: ' ⇐';
+           color: darkgray;
+           font-weight: 600;
+           text-decoration: none;
+        }
+        .especial::before {
+            content: '⇒ ';
+           color: darkgray;
+           font-weight: 600;
+           text-decoration: none;
+        }
+    </style>
+    <title>Links</title>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul >
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank" rel="next" >Reposiório GitHub </a></li>
+        <li><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="next" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank" rel="next" >Site CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>
