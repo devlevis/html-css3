@@ -28,6 +28,9 @@
             color: white;
             text-align: center;
         }
+        tbody tr:nth-child(2n) { /* EFEITO ZEBRADO */
+            background-color: lightgray;
+        }
         #total {
             text-align: left;
         }
@@ -37,6 +40,17 @@
             padding: 10px;
             background-color: lightgray;
         }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        #tabela {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
     </style>
     <title>Tabelas</title>
 </head>
@@ -52,34 +66,54 @@
         3- TFOOT (rodapé da tabela)
         TR, TD, TH
     -->
-    <table>
-        <caption>População das unidades federativas</caption>
-        <thead>
-            <tr>
-                <th scope="col";>Estado</th>
-                <th scope="col" style="width: 80px;">População</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td>44 420 459</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td>20 538 718</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td>16 054 524</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th scope="rol">Total de habitantes:</th>
-                <td id="total"> 81 013 701</td>
-            </tr>
-        </tfoot>
-    </table>
+    <div id="tabela">
+        <table>
+            <caption>População das unidades federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col";>Estado</th>
+                    <th scope="col" style="width: 80px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>44 420 459</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>20 538 718</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>16 054 524</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td>14 136 417</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td>11 443 208</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td>10 443 208</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="rol">Total de habitantes:</th>
+                    <td id="total"> 81 013 701</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam recusandae aliquam consequatur fuga illum. Impedit ullam sit enim eveniet ipsam tenetur maxime officia provident assumenda asperiores, quidem ab doloribus iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nam recusandae? Vel eos beatae eveniet eaque iure aut voluptas iusto expedita dignissimos dolor libero officiis incidunt cupiditate, similique, dolores necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto totam repudiandae velit dolorum possimus expedita repellat neque quia! Ullam doloremque, dolorum voluptas mollitia at distinctio eius est consequatur a asperiores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam recusandae aliquam consequatur fuga illum. Impedit ullam sit enim eveniet ipsam tenetur maxime officia provident assumenda asperiores, quidem ab doloribus iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nam recusandae? Vel eos beatae eveniet eaque iure aut voluptas iusto expedita dignissimos dolor libero officiis incidunt cupiditate, similique, dolores necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto totam repudiandae velit dolorum possimus expedita repellat neque quia! Ullam doloremque, dolorum voluptas mollitia at distinctio eius est consequatur a asperiores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam recusandae aliquam consequatur fuga illum. Impedit ullam sit enim eveniet ipsam tenetur maxime officia provident assumenda asperiores, quidem ab doloribus iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nam recusandae? Vel eos beatae eveniet eaque iure aut voluptas iusto expedita dignissimos dolor libero officiis incidunt cupiditate, similique, dolores necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto totam repudiandae velit dolorum possimus expedita repellat neque quia! Ullam doloremque, dolorum voluptas mollitia at distinctio eius est consequatur a asperiores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam recusandae aliquam consequatur fuga illum. Impedit ullam sit enim eveniet ipsam tenetur maxime officia provident assumenda asperiores, quidem ab doloribus iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nam recusandae? Vel eos beatae eveniet eaque iure aut voluptas iusto expedita dignissimos dolor libero officiis incidunt cupiditate, similique, dolores necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto totam repudiandae velit dolorum possimus expedita repellat neque quia! Ullam doloremque, dolorum voluptas mollitia at distinctio eius est consequatur a asperiores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam recusandae aliquam consequatur fuga illum. Impedit ullam sit enim eveniet ipsam tenetur maxime officia provident assumenda asperiores, quidem ab doloribus iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nam recusandae? Vel eos beatae eveniet eaque iure aut voluptas iusto expedita dignissimos dolor libero officiis incidunt cupiditate, similique, dolores necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto totam repudiandae velit dolorum possimus expedita repellat neque quia! Ullam doloremque, dolorum voluptas mollitia at distinctio eius est consequatur a asperiores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam recusandae aliquam consequatur fuga illum. Impedit ullam sit enim eveniet ipsam tenetur maxime officia provident assumenda asperiores, quidem ab doloribus iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nam recusandae? Vel eos beatae eveniet eaque iure aut voluptas iusto expedita dignissimos dolor libero officiis incidunt cupiditate, similique, dolores necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto totam repudiandae velit dolorum possimus expedita repellat neque quia! Ullam doloremque, dolorum voluptas mollitia at distinctio eius est consequatur a asperiores.</p>
 </body>
 </html>
